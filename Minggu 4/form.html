@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Belajar HTML 5</title>
+		</head>
+		<body>
+			<img src="logodinus.png" style="float:left;">
+			<p style="color:black;font-family:arial;font-size:150%" valign="buttom">Universitas Dian Nuswantoro</p>
+			<p style="background-color:blue;color:white;font-family:arial;font-size:120%">Data Peserta</p>
+			<form name="fhms" action="proses.php" method="post" border="0" width="100%">
+			<table border="0" width="100%">
+					<tr>
+						<td>Nim</td>
+						<td><input type="number" name="fnim" required></td>
+						<td width="30%">Berkas :</td>
+					</tr>	
+					<tr>
+						<td>Nama</td>
+						<td><input type="text" name="fnama" size="50" required></td>
+						<td><input type="checkbox" name="fktp" required">Fc KTP</td>
+					</tr>	
+					<tr>
+						<td>Tempat Lahir</td>
+						<td><input type="text" name="ftmplhr" size="30" required></td>
+						<td><input type="checkbox" name="fakte" required>Fc Akte</td>
+					</tr>
+					<tr>
+						<td>Tanggal Lahir</td>
+						<td><input type="date" name="ftgllhr" required></td>
+						<td><input type="checkbox" name="fkk" required>Fc KK</td>
+					</tr>
+					<tr>
+						<td>Jenis Kelamin</td>
+						<td>
+							<select name="fgender" required>
+								<option value="">Pilih</option>
+								<option value="a11">Wanita</option>
+								<option value="a12">Pria</option>
+							</select></td>
+					</tr>	
+					<tr>
+						<td>Progam Studi</td>
+						<td>
+							<select name="fprodi" required>
+								<option value="">Pilih</option>
+								<option value="a11">S1 - Teknik Informatika</option>
+								<option value="a12">S1 - Sistem Informasi</option>
+								<option value="a13">SI - Ilmu Komunikasi</option>
+							</select></td>
+					</tr>
+					<tr>
+						<td>Universitas</td>
+						<td>
+							<select name="funiv" required>
+								<option value="">Pilih</option>
+								<option value="a11">Universitas Negeri Semarang</option>
+								<option value="a12">Universitas Semarang</option>
+								<option value="a13">Universitas Dian Nuswantoro</option>
+								<option value="a14">Universitas Muhammadiyah</option>
+								<option value="a15">Universitas Indonesia</option>
+								<option value="a16">Universitas Tri Sakti</option>
+								<option value="a17">Universitas Gajah Mada</option>
+								<option value="a18">Universitas Malang</option>
+							</select></td>
+					<tr>
+						<td></td>
+						<td><input type="submit" name="fsubmit" value="Kirim"><input type="reset"></td>
+					</tr>
+				</table>
+			</form>
+		</body>
+	</html>	
